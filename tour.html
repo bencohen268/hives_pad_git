@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.rentcollegepads.com/tour by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2023 09:18:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="note" content="environment=development">
+<title>Tours | College Pads</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap-vue.css">
+<link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+<link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+<link href="assets/css/main05e7.css?v=3497" rel="stylesheet">
+<link rel="alternate" href="index.html" hreflang="en-us" />
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
+</head>
+
+<!-- Mirrored from www.rentcollegepads.com/tour by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2023 09:18:34 GMT -->
+</html>
+<body>
+<div id="app">
+<app-campus-header></app-campus-header>
+<div class="listUsPage">
+<div class="bannerList">
+<div class="bannerImage">
+<b-container fluid>
+<b-row class="justify-content-end">
+<b-col md="7">
+<img src="assets/frontend/images/listus/rcpBanner.png" alt="rcp" class="img-fluid">
+</b-col>
+</b-row>
+</b-container>
+</div>
+<div class="bannerContent">
+<b-container>
+<b-row>
+<b-col md="7">
+<h1>
+We are here to help improve the
+college renting experience.
+<strong>Find Out How It Works</strong>
+</h1>
+<a href="#getRegister" class="btn btn-outline-white">List With Us</a>
+</b-col>
+</b-row>
+</b-container>
+</div>
+</div>
+<main>
+<div class="alternativeRow">
+<b-container>
+<b-row>
+<b-col md="10" data-aos="zoom-in">
+<h2>Easily Create Listing</h2>
+<p>Create your listings quickly and easily, then never again. Once you create an ad we will store it forever and you can simply activate it or deactivate it. That should save you some time!</p>
+</b-col>
+</b-row>
+</b-container>
+</div>
+<div class="alternativeRow">
+<b-container>
+<b-row>
+<b-col md="4" data-aos="fade-right">
+<img src="assets/images/tours/dashboard.png" alt="Dashboard" class="img-fluid">
+</b-col>
+<b-col md="8" class="text-md-right" data-aos="fade-left">
+<h2>Manage Your <br>Portfolio on One Page</h2>
+<p>
+List your properties once, and simply update them as time goes on.
+We store them all in one easy-to-use and accessible place.
+</p>
+</b-col>
+</b-row>
+</b-container>
+</div>
+<div class="alternativeRow">
+<b-container>
+<b-row>
+<b-col md="7" data-aos="fade-left">
+<h2>Manage All <br>Your Properties</h2>
+<p>
+Need to edit, add or take a property off the market? Don’t worry; we made it so easy you can do it in less than a minute.
+</p>
+<p>
+<strong>Seamless Property Data Integration</strong>
+</p>
+<ul class="integrationPartner" data-aos="zoom-in">
+<li><img src="assets/frontend/images/listus/entrata.png" alt="entrata" class="img-fluid"></li>
+<li><img src="assets/frontend/images/listus/appfolio.png" alt="appfolio" class="img-fluid"></li>
+<li><img src="assets/frontend/images/listus/yardi.png" alt="yardi" class="img-fluid"></li>
+</ul>
+</b-col>
+<b-col md="5" data-aos="fade-right">
+<img src="assets/images/tours/properties.png" alt="properties" class="img-fluid">
+</b-col>
+</b-row>
+</b-container>
+</div>
+<div class="alternativeRow">
+<b-container>
+<b-row>
+<b-col md="4" data-aos="fade-right">
+<img src="assets/images/tours/tour.png" alt="tour" class="img-fluid">
+</b-col>
+<b-col md="8" class="text-md-right" data-aos="fade-left">
+<h2>Going <br>Virtual</h2>
+<p>
+Tired of setting up showings every day? We can help! When you list
+with us you can post open houses and show your rental all in a couple hours.
+</p>
+<p>
+Easily provide us videos and we will create Snapped tours.
+Look forward to virtual housing fairs that are hosted throughout the season.
+</p>
+</b-col>
+</b-row>
+</b-container>
+</div>
+</main>
+</div>
+<div class="formSection" id="getRegister">
+<b-container>
+<b-row>
+<b-col>
+<h2 class="text-center">List With us</h2>
+<p><strong>Note: If you are looking to sublease an apartment, head over to your campus page and click on the Sublease tab.</strong></p>
+<p v-if="showMessage">
+<strong class="green">Your form has been submitted. We will get back to your shortly!</strong>
+</p>
+<b-form @submit.prevent="submitted">
+<b-row>
+<b-col md="6">
+<div class="inputHold">
+<b-input id="inline-form-input-name" v-model="name" class="mb-2 mr-sm-2 mb-sm-0 form-mt" placeholder="Name" required></b-input>
+</div>
+</b-col>
+<b-col md="6">
+<div class="inputHold">
+<b-input id="inline-form-input-name" v-model="phone" class="mb-2 mr-sm-2 mb-sm-0 form-mt" placeholder="Telephone*"></b-input>
+</div>
+</b-col>
+<b-col md="6">
+<div class="inputHold">
+<b-input id="inline-form-input-name" v-model="email" class="mb-2 mr-sm-2 mb-sm-0 form-mt" placeholder="Email Adress*"></b-input>
+</div>
+</b-col>
+<b-col md="6">
+<div class="inputHold">
+<b-input id="inline-form-input-name" v-model="fax" class="mb-2 mr-sm-2 mb-sm-0 form-mt" placeholder="Fax"></b-input>
+</div>
+</b-col>
+<b-col>
+<div class="inputHold">
+<b-input id="inline-form-input-name" v-model="address" class="mb-2 mr-sm-2 mb-sm-0 form-mt" placeholder="Address*"></b-input>
+</div>
+</b-col>
+<b-col md="6">
+<div class="inputHold">
+<b-input id="inline-form-input-name" v-model="company" class="mb-2 mr-sm-2 mb-sm-0 form-mt" placeholder="Company Name"></b-input>
+</div>
+</b-col>
+<b-col md="12">
+<div class="inputHold">
+<b-input id="inline-form-input-name" v-model="campus" class="mb-2 mr-sm-2 mb-sm-0 form-mt" placeholder="Campus"></b-input>
+</div>
+</b-col>
+<b-col md="12">
+<div class="inputHold">
+<b-form-textarea id="textarea" placeholder="Message *" v-model="message" rows="3" max-rows="6"></b-form-textarea>
+</div>
+</b-col>
+<b-col cols="12">
+<div class="btn-wrap text-center">
+<b-button variant="success" type="submit" size="lg">Submit</b-button>
+</div>
+</b-col>
+</b-row>
+</b-form>
+</b-col>
+</b-row>
+</b-container>
+</div>
+<app-campus-footer></app-campus-footer>
+</div>
+<script src="assets/js/httpVueLoader830f.js?staging"></script>
+<script src="../cdn.jsdelivr.net/npm/vue%402.6.12/dist/vue.js"></script>
+<script src="js/polyfill.min.js"></script>
+<script src="../unpkg.com/bootstrap-vue%402.23.1/dist/bootstrap-vue.js"></script>
+<script src="js/axios.minbea6.js?v=7"></script>
+<script src="js/js-packages.js"></script>
+<script src="../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+<script>
+    var path = "assets/index.html";
+    var aws_path = "https://rcp-prod-uploads.s3.amazonaws.com/";
+    var title = "<b>Off Campus Housing</b>";
+    const username = "";
+    const guard = "";
+    const server_path= "index.html";
+
+    new Vue({
+        el: "#app",
+        name: "CampusHeader",
+        data:{
+            path: path,
+            server_path: server_path,
+            aws_path: aws_path,
+            username: username,
+            guard: guard,
+            title:title,
+
+            showMessage:false,
+            errors: [],
+            name: "",
+            email: "",
+            address: "",
+            phone: "",
+            fax: "",
+            company: "",
+            campus: "",
+            address: "",
+            message: "",
+        },
+        methods:{
+            submitted(event) {
+                this.errors = [];
+                if (!this.name) {
+                    this.errors.push('Name required.');
+                }
+                if (!this.address) {
+                    this.errors.push('Address required.');
+                }
+
+                if (!this.phone) {
+                    this.errors.push('Phone required.');
+                }
+
+                // if (!this.company) {
+                //     this.errors.push('Campus required.');
+                // }
+
+                if (!this.email) {
+                    this.errors.push('Email required.');
+                } else if (!this.validEmail(this.email)) {
+                    this.errors.push('Valid email required.');
+                }
+                if (!this.errors.length) {
+                    const formData = {
+                        email: this.email,
+                        fax: this.fax,
+                        name: this.name,
+                        message: this.message,
+                        address: this.address,
+                        company: this.company,
+                        telephone: this.phone,
+                        campus: this.campus,
+                    }
+                    //console.log(formData)
+                    this.showMessage = true;
+                    axios.post('/list', formData).then(response => {
+                        event.target.reset();
+                        setTimeout(function () {
+                            this.showMessage = false;
+                        },500)
+
+                    })
+                }
+
+
+            },
+            validEmail: function (email) {
+                var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
+        },
+        components: {
+            appCampusHeader: httpVueLoader("assets/js/components/CampusHeader.vue"),
+            appCampusFooter: httpVueLoader("assets/js/components/CampusFooterd935.vue?v=445419394"),
+            tours: httpVueLoader("assets/js/components/Tours.vue"),
+        }
+    })
+</script>
+<script>
+    $(document).ready(function () {
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    })
+</script>
+<style>
+    .listUsPage .bannerList {position: relative;display: flex;align-items: center;padding: 50px 0 0;overflow-x: hidden;}
+    .listUsPage .bannerList .bannerImage {position: relative;z-index: 1;transform: translateX(200px);width: 100%;}
+    .listUsPage .bannerList .bannerImage img{width: 100%}
+    .listUsPage .bannerList .bannerContent{position: relative;}
+    .listUsPage .bannerList .bannerImage{position: relative;}
+    .listUsPage .bannerList .bannerImage + .bannerContent {position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;display: flex;align-items: center;z-index: 1;color: #fff;}
+    .listUsPage .bannerList:after {content: '';position: absolute;left: 0;right: 0;top: 0;bottom: 0;background: #23ce60;z-index: 0;height: calc(100% - 90px);}
+    .listUsPage .bannerList .bannerContent h2 {font-size: 40px;margin-bottom: 40px;font-weight: 400}
+    .listUsPage .bannerList .bannerContent h2 strong {display: block;margin-top: 10px;font-weight: 700}
+    .listUsPage .container {max-width: 1250px;}
+    .listUsPage .bannerList .bannerContent .btn{text-transform: uppercase;font-size: 18px;padding: 10px 15px;min-width: 150px;font-weight: 600;border-width: 2px;}
+
+
+    .alternativeRow{padding: 50px 0;color: #333}
+    .alternativeRow:nth-child(even){background: #f7f8f9}
+    .listUsPage h2, h1{margin: 0 0 30px;font-size: 40px;font-weight: 700}
+    .listUsPage h3{margin: 0 0 30px;font-size: 25px;font-weight: 600}
+    .listUsPage p{font-size: 20px;line-height: 34px;margin: 0}
+    .alternativeRow p + p{margin-top: 20px}
+    .alternativeRow .row{align-items: center}
+
+    .integrationPartner{list-style: none;padding: 0;margin: 0 -10px;display: flex;align-items: center;justify-content: flex-start;flex-wrap: wrap}
+    .integrationPartner li {padding: 10px;max-width: 20%}
+    .integrationPartner li img{width: 100%;max-width: 150px}
+
+    .testimonialSection {background: #23ce60;padding: 50px 0;color: #fff;}
+    ul.testimonial {list-style: none;padding: 0;margin: 0;text-align: center;}
+    ul.testimonial li {padding: 0 50px;font-size: 20px;}
+    ul.testimonial .imageSec {width: 125px;height: 125px;border-radius: 100%;margin: 0 auto 20px;background: #eee;}
+    ul.testimonial li h4 {font-weight: 600;margin: 0;}
+    ul.testimonial li p {font-style: italic;}
+    ul.testimonial li p strong {display: block;margin-top: 20px;}
+
+    .formSection {padding: 50px 0}
+    .formSection h2{font-weight: 700;margin: 0 0 20px}
+    .formSection .inputHold {margin: 0 0 30px 0;position: relative;}
+    .formSection .form-control.form-mt {height: 46px;font-size: 16px;color: #878787;}
+
+    @media (min-width: 767px) {
+        .featureImg{height: 420px;}
+        .listUsPage main{margin-top: -90px}
+        .alternativeRow:first-child{padding: 80px 0 50px}
+    }
+
+    @media(max-width: 991px){
+        .listUsPage .bannerList .bannerContent h2{font-size: 30px;margin-bottom: 20px}
+        .listUsPage .bannerList .bannerContent .btn{font-size: 18px;padding: 10px 15px;min-width: 170px;}
+        .listUsPage .bannerList:after{height: calc(100% - 50px);}
+
+        .listUsPage h2{font-size: 23px}
+        .listUsPage h3{font-size: 19px}
+        .listUsPage p{font-size: 16px;line-height: normal}
+
+    }
+
+    @media (max-width: 767px) {
+        .listUsPage .bannerList{padding: 30px 0}
+        .listUsPage .bannerList .bannerImage + .bannerContent{position: relative}
+        .listUsPage .bannerList .bannerImage{display: none}
+        .listUsPage .bannerList:after{height: 100%}
+        .listUsPage .bannerList .bannerContent h2{font-size: 18px;margin-bottom: 15px}
+        .listUsPage .bannerList .bannerContent .btn{font-size: 15px;padding: 10px;min-width: auto}
+
+        .alternativeRow{padding: 30px 0}
+        .alternativeRow img{margin: 15px auto;display: block}
+
+        .listUsPage h2{font-size: 20px}
+        .listUsPage h3{font-size: 17px}
+        .listUsPage p{font-size: 15px;line-height: normal}
+
+        .formSection .inputHold{margin: 0 0 15px}
+        .formSection .form-control.form-mt{height: 38px;font-size: 14px}
+    }
+
+</style>
+</body>

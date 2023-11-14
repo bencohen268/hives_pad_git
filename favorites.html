@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.rentcollegepads.com/favorites by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2023 09:18:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="note" content="environment=development">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap-vue.css">
+<link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+<title>Favorites | College Pads</title>
+<link rel="canonical" href="favorites.html">
+<link rel="alternate" href="index.html" hreflang="en-us" />
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
+</head>
+
+<!-- Mirrored from www.rentcollegepads.com/favorites by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2023 09:18:33 GMT -->
+</html>
+<body>
+<div id="app">
+<app-campus-header></app-campus-header>
+<favorites :aws_path="aws_path" :server_path="server_path" :favorites="favorites" :path="path"></favorites>
+<app-campus-footer></app-campus-footer>
+</div>
+<script src="assets/js/httpVueLoader830f.js?staging"></script>
+<script src="../cdn.jsdelivr.net/npm/vue%402.6.12/dist/vue.js"></script>
+<script src="js/polyfill.min.js"></script>
+<script src="../unpkg.com/bootstrap-vue%402.23.1/dist/bootstrap-vue.js"></script>
+<script src="assets/js/vue-cookies830f.js?staging"></script>
+<script src="js/axios.minbea6.js?v=7"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPMfhDfizhNo9Z7lq9yb3QNZ2tkdaA8AQ"></script>
+<script>
+    var server_path = "index.html";
+    var path = "assets/index.html";
+    var aws_path = "https://rcp-prod-uploads.s3.amazonaws.com/";
+    var title = "<b>Off Campus Housing</b>";
+    var favorites = JSON.parse(JSON.stringify([]));
+    const username = "";
+    const guard = "";
+    const favCount = "0";
+
+    new Vue({
+        el: "#app",
+        name: "CampusHeader",
+        data:{
+            favCount: favCount,
+            path: path,
+            favorites: favorites,
+            username: username,
+            guard: guard,
+            aws_path: aws_path,
+
+            server_path: server_path,
+            title:title,
+        },
+        components: {
+            appCampusHeader: httpVueLoader("assets/js/components/CampusHeader.vue"),
+            appCampusFooter: httpVueLoader("assets/js/components/CampusFooterb679.vue?v=304120753"),
+            favorites: httpVueLoader("assets/js/components/Favorites.vue")
+        }
+    })
+</script>
+</body>

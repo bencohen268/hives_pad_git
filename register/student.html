@@ -1,0 +1,738 @@
+<style>
+    .hide {
+        display: none !important;
+    }
+</style>
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+    $(document).on('change', '#campus_id', function () {
+        const campus = $(this).val();
+        if (campus == 'other') {
+            $('.rb7').removeClass('hide')
+
+        } else {
+            $('.rb7').addClass('hide')
+        }
+
+    })
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.rentcollegepads.com/register/student by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2023 09:19:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="csrf-token" content="0AHPxvdZPXySCXMIXRDVDKQ8i8T9p93bArLGWkjJ">
+<title>College  Pads</title>
+
+<script src="../js/app.js" defer></script>
+
+<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+<link href="../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+<link href="../assets/css/main.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../assets/images/favicon.svg">
+
+<link href="../css/app.css" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+<header>
+<div class="header_main_listing">
+<nav class="navbar navbar-dark navbar-expand-xl">
+<a target="_self" href="../index.html" class="navbar-brand">
+<img src="../assets/images/college-logo.png" width="200" height="60" class="main-logo hidden-xs">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="nav-collapse" class="navbar-collapse collapse">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a target="_self" href="../off-campus-housing.html" class="nav-link">Listings</a></li>
+<li class="nav-item"><a target="_self" href="../roommates.html" class="nav-link">Roommates</a></li>
+<li class="nav-item"><a target="_self" href="../subleases.html" class="nav-link">Subleases</a></li>
+<li class="nav-item"><a target="_self" href="#" class="nav-link">Guide</a></li>
+<li class="nav-item RC_fav_top">
+<a target="_self" href="../favorites.html" class="nav-link">
+<small class="count favCount">0</small>
+<div class="sprite bg-heart"></div>
+</a>
+</li>
+<li class="nav-item"><a target="_self" href="../login/student.html" class="nav-link">Login</a></li>
+<li class="nav-item active"><a target="_self" href="../list.html" class="nav-link">List With Us</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</nav>
+<main class="py-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="card">
+<div class="card-header">Student Register</div>
+<div class="card-body">
+<form method="POST" action="https://www.rentcollegepads.com/register/student" aria-label="Register">
+<input type="hidden" name="_token" value="0AHPxvdZPXySCXMIXRDVDKQ8i8T9p93bArLGWkjJ"> <input type="hidden" name="school_id" value>
+<input type="hidden" name="fair" value>
+<div class="form-group row">
+<label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
+<div class="col-md-6">
+<input id="name" type="text" class="form-control" name="name" value required autofocus autocomplete="off">
+</div>
+</div>
+<div class="form-group row">
+<label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
+<div class="col-md-6">
+<input id="username" type="text" class="form-control" name="username" value required autofocus autocomplete="off">
+</div>
+</div>
+<div class="form-group row">
+<label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+<div class="col-md-6">
+<input id="email" type="email" class="form-control" name="email" value required>
+</div>
+</div>
+<div class="form-group row">
+<label for="email" class="col-md-4 col-form-label text-md-right">Campus</label>
+<div class="col-md-6">
+<select class="form-control" name="campus_id" id="campus_id">
+<option value>Select Campus</option>
+<option value="559">A.T. Still University</option>
+<option value="419">Aims Community College</option>
+<option value="418">Allen College</option>
+<option value="417">Alverno College</option>
+<option value="503">Angelo State University</option>
+<option value="78">Appalachian State University</option>
+<option value="76">Arizona State University</option>
+<option value="508">Arizona State University - DO NOT USE</option>
+<option value="416">Athens Technical College</option>
+<option value="97">Auburn University</option>
+<option value="415">Augsburg College</option>
+<option value="541">Augusta University</option>
+<option value="414">Austin Community College District</option>
+<option value="585">Austin Peay State University</option>
+<option value="558">Aveda Arts &amp; Sciences Institute Austin</option>
+<option value="56">Ball State University</option>
+<option value="587">Barry University</option>
+<option value="156">Baylor University</option>
+<option value="207">Belmont</option>
+<option value="412">Bethany Lutheran College</option>
+<option value="250">Binghamton University</option>
+<option value="243">Bloomsburg University</option>
+<option value="136">Boise State University</option>
+<option value="552">Boston University</option>
+<option value="411">Boulder College of Massage Therapy</option>
+<option value="163">Bowling Green State University</option>
+<option value="409">Bradford School Columbus</option>
+<option value="410">Bradford School Pittsburgh</option>
+<option value="574">Bradley University</option>
+<option value="408">Bridgewater College</option>
+<option value="218">Brigham Young University</option>
+<option value="580">Brooklyn College</option>
+<option value="407">Broome Community College</option>
+<option value="406">Brown Mackie College Tucson</option>
+<option value="557">Brown University</option>
+<option value="405">Bryan University Springfield</option>
+<option value="434">Buffalo State</option>
+<option value="509">CSU Dominguez Hills</option>
+<option value="72">CU-Boulder</option>
+<option value="476">California Polytechnic State University</option>
+<option value="253">California State Univeristy - Los Angeles</option>
+<option value="81">California State University - Chico</option>
+<option value="466">California State University - Fresno</option>
+<option value="504">California State University - Fullerton</option>
+<option value="522">California State University, East Bay</option>
+<option value="111">California State University, Long Beach</option>
+<option value="112">California State University, Northridge</option>
+<option value="485">California University of Pennsylvania</option>
+<option value="403">Capella University</option>
+<option value="402">Capital University</option>
+<option value="401">Cardinal Stritch University</option>
+<option value="400">Carlow University</option>
+<option value="205">Carnegie Mellon University</option>
+<option value="597">Case Western Reserve University</option>
+<option value="120">Central Connecticut State University</option>
+<option value="177">Central Michigan University</option>
+<option value="398">Centura College Richmond Main</option>
+<option value="397">Chamberlain College of Nursing Ohio</option>
+<option value="396">Champlain College</option>
+<option value="219">Chapman University</option>
+<option value="395">Chatham University</option>
+<option value="394">Cheyney University of Pennsylvania</option>
+<option value="393">Chippewa Valley Technical College</option>
+<option value="392">City College Gainesville</option>
+<option value="566">Clark Atlanta University</option>
+<option value="87">Clemson University</option>
+<option value="573">Cleveland State University</option>
+<option value="561">Coastal Carolina University</option>
+<option value="390">College America Fort Collins</option>
+<option value="189">College of Charleston</option>
+<option value="71">Colorado State University</option>
+<option value="501">Colorado State University-Pueblo</option>
+<option value="389">Columbia College</option>
+<option value="543">Columbia University</option>
+<option value="388">Columbus College of Art and Design</option>
+<option value="387">Columbus State Community College</option>
+<option value="445">Columbus State University</option>
+<option value="386">Community College of Allegheny County</option>
+<option value="385">Community College of Philadelphia</option>
+<option value="384">Concordia University Ann Arbor</option>
+<option value="383">Concordia University Saint Paul</option>
+<option value="64">Cornell University</option>
+<option value="382">Cox College</option>
+<option value="381">Crouse Hospital College of Nursing</option>
+<option value="380">Davis College</option>
+<option value="379">Dean Institute of Technology</option>
+<option value="200">Drexel University</option>
+<option value="378">Drury University</option>
+<option value="377">Duluth Business University</option>
+<option value="376">Dunwoody College of Technology</option>
+<option value="236">Duquesne University</option>
+<option value="180">East Carolina University</option>
+<option value="433">East Tennessee State</option>
+<option value="251">Eastern Illinois University</option>
+<option value="143">Eastern Kentucky University</option>
+<option value="375">Eastern Mennonite University</option>
+<option value="30">Eastern Michigan University</option>
+<option value="211">Eastern Washington University</option>
+<option value="374">Edgewood College</option>
+<option value="482">Edinboro University of Pennsylvania</option>
+<option value="499">Embry-Riddle Aeronautical University</option>
+<option value="228">Emory University</option>
+<option value="373">Evangel University</option>
+<option value="372">Everest College Springfield</option>
+<option value="371">Everest Institute Pittsburgh</option>
+<option value="471">Fashion Institute of Technology</option>
+<option value="510">Ferris State University</option>
+<option value="126">Florida Atlantic University</option>
+<option value="127">Florida Gulf Coast University</option>
+<option value="602">Florida Institute of Technology</option>
+<option value="128">Florida International University</option>
+<option value="129">Florida State University</option>
+<option value="368">Fortis College Ravenna</option>
+<option value="367">Fortis College Richmond</option>
+<option value="366">Fountainhead College of Technology</option>
+<option value="365">Franklin University</option>
+<option value="536">Frostburg State University</option>
+<option value="600">Furman University</option>
+<option value="560">Gannon University</option>
+<option value="537">George Mason University - Arlington</option>
+<option value="538">George Mason University - Loudon/Signal Hill</option>
+<option value="193">George Mason University - Northern Virginia Sites and Campuses</option>
+<option value="539">George Mason University - Potomac Science Center</option>
+<option value="601">Georgia College &amp; State University</option>
+<option value="134">Georgia Institute of Technology</option>
+<option value="217">Georgia Southern University</option>
+<option value="135">Georgia State University</option>
+<option value="364">Goldey Beacom College</option>
+<option value="249">Gonzaga University</option>
+<option value="166">Grand Valley State University</option>
+<option value="363">Gratz College</option>
+<option value="362">Hamline University</option>
+<option value="361">Harrison College Lafayette</option>
+<option value="360">Harrison College Muncie</option>
+<option value="479">Hawkeye Community College</option>
+<option value="359">Heartland Community College</option>
+<option value="225">Hofstra</option>
+<option value="357">Hussian School of Art</option>
+<option value="356">Huston Tillotson University</option>
+<option value="137">Idaho State University</option>
+<option value="23">Illinois State University</option>
+<option value="548">Illinois State University - Don&#039;t Use</option>
+<option value="355">Illinois Wesleyan University</option>
+<option value="354">Immaculata University</option>
+<option value="139">Indiana State University</option>
+<option value="4">Indiana University</option>
+<option value="165">Indiana University of Pennsylvania</option>
+<option value="140">Indiana University â€“ Purdue University Indianapolis</option>
+<option value="352">Institute of Production and Recording</option>
+<option value="44">Iowa State University</option>
+<option value="351">Ithaca College</option>
+<option value="350">Ivy Tech Community College Bloomington</option>
+<option value="349">Ivy Tech Community College East Central</option>
+<option value="348">Ivy Tech Community College Lafayette</option>
+<option value="155">James Madison University</option>
+<option value="347">Jna Institute of Culinary Arts</option>
+<option value="80">Kansas State University</option>
+<option value="515">Keene State College</option>
+<option value="449">Kennesaw State University</option>
+<option value="159">Kent State University</option>
+<option value="256">Kutztown University</option>
+<option value="346">La Salle University</option>
+<option value="345">Lake Superior College</option>
+<option value="344">Lansing Community College</option>
+<option value="342">Le Moyne College</option>
+<option value="519">Lehigh University</option>
+<option value="341">Lincoln College of Technology Columbus</option>
+<option value="182">Louisiana State University</option>
+<option value="147">Louisiana Tech University</option>
+<option value="259">MATC Milwaukee</option>
+<option value="340">Macalester College</option>
+<option value="339">Madison Area Technical College</option>
+<option value="338">Manhattan Area Technical College</option>
+<option value="337">Manhattan Christian College</option>
+<option value="336">Manor College</option>
+<option value="5">Marquette University</option>
+<option value="230">Marshall University</option>
+<option value="335">McLennan Community College</option>
+<option value="484">Medical College of Wisconsin</option>
+<option value="493">Miami University</option>
+<option value="60">Michigan State University</option>
+<option value="221">Middle Tennessee State University</option>
+<option value="332">Miller Motte College Greenville</option>
+<option value="3">Milwaukee Colleges</option>
+<option value="331">Milwaukee Institute of Art and Design</option>
+<option value="260">Milwaukee School Of Engineering</option>
+<option value="330">Minneapolis Business College</option>
+<option value="329">Minneapolis College of Art and Design</option>
+<option value="328">Minneapolis Community and Technical College</option>
+<option value="327">Minnesota State College Southeast Technical</option>
+<option value="59">Minnesota State University, Mankato</option>
+<option value="220">Mississippi State University</option>
+<option value="216">Missouri State University</option>
+<option value="326">Monroe Community College</option>
+<option value="75">Montana State University</option>
+<option value="325">Moore College of Art and Design</option>
+<option value="596">Morehouse College</option>
+<option value="324">Mount Carmel College of Nursing</option>
+<option value="323">Mount Mary College</option>
+<option value="322">Naropa University</option>
+<option value="320">Nazareth College</option>
+<option value="319">New Hope Christian College</option>
+<option value="465">New York University</option>
+<option value="467">North Carolina Agricultural and Technical State University</option>
+<option value="603">North Carolina Central University</option>
+<option value="157">North Carolina State University</option>
+<option value="318">North Central University</option>
+<option value="197">North Dakota State</option>
+<option value="567">NorthWest Arkansas Community College</option>
+<option value="591">Northeast Wisconsin Technical College</option>
+<option value="208">Northeastern University</option>
+<option value="101">Northern Arizona University</option>
+<option value="9">Northern Illinois University</option>
+<option value="144">Northern Kentucky University</option>
+<option value="198">Northern Michigan University</option>
+<option value="317">Northwest Christian University</option>
+<option value="11">Northwestern</option>
+<option value="457">Notre Dame University</option>
+<option value="316">Ohio Dominican University</option>
+<option value="38">Ohio State University</option>
+<option value="154">Ohio University</option>
+<option value="85">Oklahoma State University</option>
+<option value="201">Old Dominion University</option>
+<option value="212">Ole Miss</option>
+<option value="315">Onondaga Community College</option>
+<option value="569">Oregon Institute of Technology</option>
+<option value="39">Oregon State University</option>
+<option value="314">Ozarks Technical Community College</option>
+<option value="586">Pacific Northwest University of Health Sciences</option>
+<option value="584">Palm Beach Atlantic University</option>
+<option value="313">Parkland College</option>
+<option value="312">Peirce College</option>
+<option value="55">Penn State University</option>
+<option value="311">Pennsylvania Academy of the Fine Arts</option>
+<option value="116">Pepperdine University</option>
+<option value="310">Philadelphia University</option>
+<option value="568">Phoenix College</option>
+<option value="309">Piedmont Virginia Community College</option>
+<option value="308">Pima Community College</option>
+<option value="306">Pitt Community College</option>
+<option value="305">Point Park University</option>
+<option value="25">Purdue University</option>
+<option value="592">Purdue University Fort Wayne</option>
+<option value="595">Purdue University Northwest</option>
+<option value="123">Quinnipiac University</option>
+<option value="186">Radford University</option>
+<option value="358">Randall University</option>
+<option value="588">Regent University</option>
+<option value="231">Rochester Institute of Technology</option>
+<option value="502">Rose-Hulman Institute of Technology</option>
+<option value="516">Rowan University</option>
+<option value="304">Rutgers University - Camden</option>
+<option value="89">Rutgers University - New Brunswick</option>
+<option value="520">Rutgers University - Newark</option>
+<option value="285">SUNY College of Environmental Science and Forestry</option>
+<option value="252">SUNY Cortland</option>
+<option value="512">SUNY Fredonia</option>
+<option value="461">SUNY New Paltz</option>
+<option value="435">SUNY Oneonta</option>
+<option value="480">SUNY Oswego</option>
+<option value="514">SUNY Plattsburgh</option>
+<option value="513">SUNY Potsdam</option>
+<option value="478">SUNY Upstate Medical University</option>
+<option value="500">Sacramento State University</option>
+<option value="303">Saginaw Chippewa Tribal College</option>
+<option value="475">Saginaw Valley State University</option>
+<option value="302">Saint Edward&#039;s University</option>
+<option value="301">Saint John Fisher College</option>
+<option value="65">Saint Louis University</option>
+<option value="300">Saint Mary&#039;s University of Minnesota</option>
+<option value="299">Saint Michael&#039;s College</option>
+<option value="254">Salisbury University</option>
+<option value="447">Sam Houston State University</option>
+<option value="604">Samford University</option>
+<option value="113">San Diego State University</option>
+<option value="114">San Francisco State University</option>
+<option value="115">San JosÃ© State University</option>
+<option value="298">Sanford Brown Institute Pittsburgh</option>
+<option value="297">Santa Fe College</option>
+<option value="563">Sarah Lawrence College</option>
+<option value="224">Seton Hall</option>
+<option value="460">Shippensburg University</option>
+<option value="238">Slippery Rock University</option>
+<option value="295">South Central College</option>
+<option value="294">South College</option>
+<option value="293">South Hills School of Business and Technology</option>
+<option value="462">Southeast Missouri State University</option>
+<option value="121">Southern Connecticut State University</option>
+<option value="95">Southern Illinois University</option>
+<option value="444">Southern Illinois University Edwardsville</option>
+<option value="518">Southern Oregon University</option>
+<option value="292">Southern Wesleyan University</option>
+<option value="291">Southwest University of Visual Arts Tucson</option>
+<option value="583">Spelman College</option>
+<option value="290">St Catherine University</option>
+<option value="289">St Joseph&#039;s College of Nursing at St Joseph&#039;s Hospital Health Center</option>
+<option value="183">St. Cloud State University</option>
+<option value="605">St. Petersburg College</option>
+<option value="454">Stephen F. Austin State University</option>
+<option value="288">Stephens College</option>
+<option value="287">Stevens Henager College Logan</option>
+<option value="286">Stillman College</option>
+<option value="191">Stony Brook University</option>
+<option value="162">Syracuse University</option>
+<option value="562">Tallahassee Community College</option>
+<option value="284">Talmudical Institute of Upstate New York</option>
+<option value="158">Temple University</option>
+<option value="472">Tennessee State University</option>
+<option value="73">Texas A&amp;M University</option>
+<option value="517">Texas A&amp;M University-Commerce</option>
+<option value="594">Texas Christian University</option>
+<option value="223">Texas State University</option>
+<option value="446">Texas Tech University</option>
+<option value="283">The Art Institute of Philadelphia</option>
+<option value="282">The Art Institute of Pittsburgh</option>
+<option value="281">The Art Institute of Tucson</option>
+<option value="279">The Art Institutes International Minnesota</option>
+<option value="481">The College at Brockport</option>
+<option value="495">The College of Saint Rose</option>
+<option value="278">The College of Saint Scholastica</option>
+<option value="277">The Restaurant School at Walnut Hill College</option>
+<option value="494">The University at Albany, SUNY</option>
+<option value="590">The University of Colorado Denver</option>
+<option value="276">The University of the Arts</option>
+<option value="199">Towson University </option>
+<option value="275">Tri County Technical College</option>
+<option value="98">Troy University</option>
+<option value="581">Truman State University</option>
+<option value="150">Tulane University</option>
+<option value="153">UCSB Site</option>
+<option value="96">UMassAmherst</option>
+<option value="450">UNC-Charlotte</option>
+<option value="456">UNC-Greensboro</option>
+<option value="488">UNLV</option>
+<option value="21">UW-Eau Claire</option>
+<option value="477">UW-Green Bay</option>
+<option value="2">UW-La Crosse</option>
+<option value="10">UW-Oshkosh</option>
+<option value="57">UW-Platteville</option>
+<option value="28">UW-River Falls</option>
+<option value="19">UW-Stevens Point</option>
+<option value="13">UW-Stout</option>
+<option value="453">University Of Central Missouri</option>
+<option value="455">University Of Nevada, Reno</option>
+<option value="451">University Of West Georgia</option>
+<option value="213">University at Buffalo</option>
+<option value="430">University of Akron</option>
+<option value="99">University of Alabama</option>
+<option value="100">University of Alabama at Birmingham</option>
+<option value="589">University of Alabama in Huntsville</option>
+<option value="77">University of Arizona</option>
+<option value="104">University of California, Berkeley</option>
+<option value="92">University of California, Davis</option>
+<option value="105">University of California, Irvine</option>
+<option value="106">University of California, Los Angeles</option>
+<option value="107">University of California, Riverside</option>
+<option value="108">University of California, San Diego</option>
+<option value="109">University of California, Santa Barbara</option>
+<option value="110">University of California, Santa Cruz</option>
+<option value="103">University of Central Arkansas</option>
+<option value="130">University of Central Florida</option>
+<option value="32">University of Cincinnati</option>
+<option value="564">University of Colorado Colorado Springs</option>
+<option value="74">University of Connecticut</option>
+<option value="125">University of Delaware</option>
+<option value="119">University of Denver</option>
+<option value="131">University of Florida</option>
+<option value="67">University of Georgia</option>
+<option value="122">University of Hartford</option>
+<option value="226">University of Houston</option>
+<option value="138">University of Idaho</option>
+<option value="22">University of Illinois at Urbana-Champaign</option>
+<option value="141">University of Iowa</option>
+<option value="69">University of Kansas</option>
+<option value="34">University of Kentucky</option>
+<option value="148">University of Louisiana at Lafayette</option>
+<option value="145">University of Louisville</option>
+<option value="151">University of Maine</option>
+<option value="79">University of Maryland</option>
+<option value="86">University of Massachusetts, Amherst</option>
+<option value="593">University of Memphis</option>
+<option value="133">University of Miami</option>
+<option value="37">University of Michigan</option>
+<option value="36">University of Minnesota - Twin Cities</option>
+<option value="164">University of Minnesota Duluth</option>
+<option value="35">University of Missouri</option>
+<option value="545">University of Missouri-Kansas City</option>
+<option value="599">University of Missouri-St. Louis</option>
+<option value="521">University of Montana</option>
+<option value="546">University of Nebraska Omaha</option>
+<option value="255">University of New Hampshire</option>
+<option value="245">University of New Haven</option>
+<option value="149">University of New Orleans</option>
+<option value="222">University of North Carolina at Wilmington</option>
+<option value="63">University of North Carolina, Chapel Hill</option>
+<option value="505">University of North Dakota</option>
+<option value="132">University of North Florida</option>
+<option value="118">University of Northern Colorado</option>
+<option value="62">University of Northern Iowa</option>
+<option value="83">University of Oklahoma</option>
+<option value="40">University of Oregon</option>
+<option value="202">University of Pennsylvania</option>
+<option value="181">University of Pittsburgh</option>
+<option value="565">University of Rhode Island</option>
+<option value="239">University of Rochester</option>
+<option value="117">University of San Francisco</option>
+<option value="575">University of South Alabama</option>
+<option value="61">University of South Carolina</option>
+<option value="229">University of South Dakota</option>
+<option value="487">University of South Florida</option>
+<option value="452">University of Southern California</option>
+<option value="437">University of Southern Mississippi</option>
+<option value="274">University of St Thomas MN</option>
+<option value="184">University of Tennessee</option>
+<option value="496">University of Tennessee at Chattanooga</option>
+<option value="160">University of Texas</option>
+<option value="556">University of Texas at Dallas</option>
+<option value="227">University of Texas at San Antonio</option>
+<option value="483">University of Toledo</option>
+<option value="551">University of Utah</option>
+<option value="161">University of Vermont</option>
+<option value="167">University of Virginia</option>
+<option value="232">University of Washington</option>
+<option value="1">University of Wisconsin - Madison</option>
+<option value="273">University of Wisconsin Colleges</option>
+<option value="272">University of Wisconsin Superior</option>
+<option value="523">University of Wisconsin-Parkside</option>
+<option value="6">University of Wisconsin-Whitewater</option>
+<option value="204">University of Wyoming</option>
+<option value="234">Utah State</option>
+<option value="572">Utah Tech University</option>
+<option value="542">Utah Valley University</option>
+<option value="463">Valdosta State University</option>
+<option value="203">Vanderbilt</option>
+<option value="271">Vatterott College Springfield</option>
+<option value="270">Vet Tech Institute</option>
+<option value="544">Villanova</option>
+<option value="269">Virginia College</option>
+<option value="268">Virginia College Austin</option>
+<option value="91">Virginia Commonwealth University</option>
+<option value="90">Virginia Tech University</option>
+<option value="267">Virginia Union University</option>
+<option value="266">Viterbo University</option>
+<option value="82">Washington State University</option>
+<option value="550">Washington University in St. Louis</option>
+<option value="265">Washtenaw Community College</option>
+<option value="240">West Chester University</option>
+<option value="264">West Virginia Junior College Morgantown</option>
+<option value="66">West Virginia University</option>
+<option value="436">Western Carolina University</option>
+<option value="20">Western Illinois University</option>
+<option value="146">Western Kentucky University</option>
+<option value="178">Western Michigan University</option>
+<option value="263">Western Technical College</option>
+<option value="448">Western Washington University</option>
+<option value="540">Wheaton College</option>
+<option value="142">Wichita State University</option>
+<option value="179">Winona State University</option>
+<option value="582">Winston-Salem State University</option>
+<option value="262">Wisconsin Lutheran College</option>
+<option value="261">Wor Wic Community College</option>
+<option value="214">Yale</option>
+<option value="598">Yavapai College</option>
+<option value="547">Youngstown State University</option>
+<option value="other">Other</option>
+</select>
+</div>
+</div>
+<div class="form-group row hide rb7">
+<label for="email" class="col-md-4 col-form-label text-md-right"></label>
+<div class="col-md-6">
+<input id="other" type="other" class="form-control" name="other" value>
+</div>
+</div>
+<div class="form-group row">
+<label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+<div class="col-md-6">
+<input id="password" type="password" class="form-control" name="password" required autocomplete="off">
+</div>
+</div>
+<div class="form-group row">
+<label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+<div class="col-md-6">
+<input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="off">
+</div>
+</div>
+<div class="form-group row mb-0">
+<div class="col-md-6 offset-md-4">
+<button type="submit" class="btn btn-primary">
+Register
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col">
+<ul class="socialList">
+<li><a href="https://www.facebook.com/RentCollegePads" id="rcp-fb"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://twitter.com/RentCollegePads" id="rcp-tw"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.linkedin.com/company/rent-college-pads" id="rcp-ln"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCLovXEDCo7uH-AnZaA_KZhw" id="rcp-yt"><i class="fa fa-youtube"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<hr>
+</div>
+<div class="col">
+<ul class="footer-menu">
+<li><a href="../careers.html" id="link-careers">Careers</a></li>
+<li><a href="https://partnerships.rentcollegepads.com/" id="link-partners">Partnership</a></li>
+<li><a href="../news.html" id="link-news">News</a></li>
+<li><a href="../contactus.html" id="link-contactus">Contact</a></li>
+<li><a href="../privacy.html" id="link-privacy">Privacy</a></li>
+<li><a href="../terms.html" id="link-terms">Terms</a></li>
+<li><a href="../disclaimer.html" id="link-disclaimer">Disclaimer</a></li>
+</ul>
+<p>Copyright © 2023. Rent College Pads. All rights reserved</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<style>
+        body, html {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .RC_fav_top .nav-link{padding: 20px 15px; position: relative;}
+        .RC_fav_top .count {
+            text-align: center;
+            position: absolute;
+            color: #fff;
+            border-radius: 50%;
+            right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 12px;
+            width: 14px;
+            height: 14px;
+            font-size: 75%;
+            padding: 0;
+            background: #c1c1c1;
+        }
+        header{border-top: 5px solid #080808; background-color: #fff}
+        .navbar-toggler  {
+            padding: 9px 10px;
+            margin-top: 27px;
+            margin-right: 15px;
+            margin-bottom: 8px;
+            background-color: #24ce61;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .navbar-inverse .navbar-toggle {
+            border: 0;
+        }
+        .header_main_listing nav .navbar-brand {
+            max-width: 220px;
+            height: auto;
+        }
+        .header_main_listing nav .navbar-brand img {
+            max-width: 100%;
+            height: auto;
+        }
+        .header_main_listing .navbar {  padding: 0 }
+        .header_main_listing nav .navbar-brand{padding: 0 7px}
+        .hide_login { display: none  }
+
+        .header_main_listing .navbar-dark .navbar-nav .nav-link {
+            padding: 0.8vw 1vw;
+            color: #292928;
+            text-shadow: 0 1px 0 rgba(255,255,255,.25);
+            font-weight: 600;
+            font-size: 0.875rem;
+            line-height: 28px;
+        }
+        .header_main_listing .navbar-dark .navbar-nav .nav-item{line-height: 1.9;}
+        .header_main_listing .navbar-dark .navbar-nav .nav-item:not(:first-child){border-left: 1px solid #EDEBEB}
+        .header_main_listing .navbar-dark .navbar-nav .nav-item.active a{
+            color: #23ce60;
+        }
+        .header_main_listing .navbar-dark .navbar-nav .nav-item.active a:hover{
+            color: #fff;
+        }
+        .header_main_listing .navbar-dark .navbar-nav .nav-link:hover{
+            background: #23ce60;
+            color: #fff;
+            background-repeat: repeat-x;
+        }
+        footer {padding: 30px 0; background-color: #fff}
+        .socialList {list-style: none;margin: 0;padding: 0;display: flex;justify-content: center;align-items: center;}
+        .socialList li {padding: 0 6px;}
+        .socialList li a {width: 50px;height: 50px;border-radius: 50%;background: #33cc66;display: flex;justify-content: center;align-items: center;text-decoration: none;transition: 0.15s all linear}
+        .socialList li a .fa {color: #fff;font-size: 1.5rem;}
+        .socialList li a:hover{background: #fff;box-shadow: 0px 0 40px 1px rgba(0,0,0,0.2)}
+        .socialList li a:hover .fa{color: #23ce60}
+        footer hr {margin: 30px 0;}
+        .footer-menu {list-style: none;margin: 0 0 15px;padding: 0;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;}
+        .footer-menu li {position: relative;padding: 5px 20px;}
+        .footer-menu li a {font-family: 'Roboto', sans-serif;font-weight: 700;font-size: 1.12rem;color: #33cc66;}
+        .footer-menu li:not(:first-child):after {content: '';position: absolute;left: 0;top: 13px;width: 8px;height: 8px;border-radius: 50%;background: #33cc66;}
+        .footer-menu + p {margin: 0;text-align: center;font-size: 15px;color: rgba(53, 53, 53, 0.5);}
+
+        @media (min-width: 992px) and (max-width: 1200px){
+            .header_main_listing .navbar-dark .navbar-nav .nav-item a{font-size: 13px; padding: 10px 15px;}
+            .navbar-toggler{margin-top: 10px !important;padding: 5px !important;}
+        }
+        @media (max-width: 767px){
+            footer{padding: 15px 0 !important;}
+            .socialList li a {width: 40px !important;height: 40px !important;}
+            .socialList li a .fa{font-size: 1.1rem !important;}
+            footer hr {margin: 20px 0 !important;}
+            .footer-menu li {padding: 1px 10px !important;}
+            .footer-menu li a {font-size: 0.9rem !important;}
+            .footer-menu li:not(:first-child):after {left: 2px !important;top: 12px !important;width: 5px !important;height: 5px !important;}
+        }
+
+    </style>
+</body>
+
+<!-- Mirrored from www.rentcollegepads.com/register/student by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2023 09:19:14 GMT -->
+</html>

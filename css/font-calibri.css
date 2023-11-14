@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('fonts/CalibreWeb-Light.eot');
+    src: url('fonts/CalibreWeb-Lightd41d.eot?#iefix') format("embedded-opentype"),  url('fonts/CalibreWeb-Light.woff') format("woff");
+    font-style: normal;
+}
+@font-face {
+font-family: 'Regular';
+    src: url('fonts/CalibreWeb-Regular.eot');
+    src: url('fonts/CalibreWeb-Regulard41d.eot?#iefix') format("embedded-opentype"),  url('fonts/CalibreWeb-Regular.woff') format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+font-family: 'Medium';
+    src: url('fonts/CalibreWeb-Medium.eot');
+    src: url('fonts/CalibreWeb-Mediumd41d.eot?#iefix') format("embedded-opentype"),url('fonts/CalibreWeb-Medium.woff') format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Bold';
+    src: url('fonts/CalibreWeb-Bold.eot');
+    src: url('fonts/CalibreWeb-Boldd41d.eot?#iefix') format("embedded-opentype"),url('fonts/CalibreWeb-Bold.woff') format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
